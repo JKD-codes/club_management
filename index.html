@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Club Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>School Club Manager</h1>
+    <nav>
+      <button onclick="showSection('directory')">Club Directory</button>
+      <button onclick="showSection('create')">Create Club</button>
+      <button onclick="showSection('about')">About</button>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="directory" class="active">
+      <h2>Available Clubs</h2>
+      <div id="club-list" class="card-container"></div>
+    </section>
+
+    
+    <section id="create">
+      <h2>Create a New Club</h2>
+      <form id="create-club-form">
+        <label>Club Name</label>
+        <input type="text" id="club-name" required>
+
+        <label>Description</label>
+        <textarea id="club-description" required></textarea>
+
+        <button type="submit">Create Club</button>
+      </form>
+    </section>
+
+    
+    <section id="about">
+      <h2>About This Project</h2>
+      <p>
+        The School Club Manager is a simple demo project built using only
+        <strong>HTML, CSS, and JavaScript</strong>. It allows you to create
+        sample clubs and display them in a directory with no backend required.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 School Club Manager Demo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
